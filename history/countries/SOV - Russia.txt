@@ -76,6 +76,7 @@ set_technology = { #player
 	SOV_light_infantry = 1
 	tech_light_infantry = 1
 	synth_oil_experiments = 1
+	rubber_processing = 1
 }
 
   

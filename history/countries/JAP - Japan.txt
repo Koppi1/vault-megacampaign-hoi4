@@ -303,6 +303,7 @@ if = {
 	limit = { NOT = { has_non_aggression_pact_with = ITA } }
 	diplomatic_relation = { country = ITA relation = non_aggression_pact }
 }
+	add_ideas = MTG_naval_treaty_adherent
 create_faction = JAP_geacps
 add_to_faction = JAP
 

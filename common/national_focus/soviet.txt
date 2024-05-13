@@ -493,6 +493,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			433 = {
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -796,7 +803,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_support_persian_industrial_loans }
 		relative_position_id = SOV_support_persian_industrial_loans
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
 		y = 2
 
@@ -829,7 +836,39 @@ focus_tree = {
 		prerequisite = { focus = SOV_brightest_minds }
 		relative_position_id = SOV_brightest_minds
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_production_management
+		icon = GFX_SOV_production_targets
+
+		prerequisite = { focus = SOV_total_war_industry }
+		prerequisite = { focus = SOV_production_management }
+		relative_position_id = SOV_production_management
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
 		y = 2
 
@@ -1454,7 +1493,7 @@ focus_tree = {
 		id = SOV_ministry_of_aircraft_production
 		icon = GFX_SOV_red_army_airforce
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = 17
 		y = 0
 
@@ -1485,7 +1524,7 @@ focus_tree = {
 
 		relative_position_id = SOV_ministry_of_aircraft_production
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -2
 		y = 0
 
@@ -1516,7 +1555,7 @@ focus_tree = {
 
 		relative_position_id = SOV_ministry_of_aircraft_production
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = 2
 		y = 0
 
@@ -1550,7 +1589,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_ministry_of_aircraft_production }
 		relative_position_id = SOV_ministry_of_aircraft_production
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -1
 		y = 1
 
@@ -1584,7 +1623,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_ministry_of_aircraft_production }
 		relative_position_id = SOV_ministry_of_aircraft_production
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = 1
 		y = 1
 
@@ -1616,7 +1655,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_new_branch_of_the_military }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = 1
 		y = 1
 
@@ -1648,7 +1687,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_new_branch_of_the_military focus = SOV_integrated_air_corps }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -1
 		y = 1
 
@@ -1680,7 +1719,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_new_branch_of_the_military focus = SOV_integrated_air_corps }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -3
 		y = 1
 
@@ -1712,7 +1751,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_tactical_bombers }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -4
 		y = 2
 
@@ -1746,7 +1785,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_supremacy_of_production }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -2
 		y = 2
 
@@ -1780,7 +1819,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_supremacy_of_production }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = 0
 		y = 2
 
@@ -1812,7 +1851,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_expanding_divebombing_school focus = SOV_expanding_dogfight_school }
 		relative_position_id = SOV_new_branch_of_the_military
 
-		search_filters = { FOCUS_FILTER_AIR }
+		search_filters = { FOCUS_FILTER_AIR_XP }
 		x = -1
 		y = 3
 
@@ -1844,7 +1883,7 @@ focus_tree = {
 		icon = GFX_goal_coastal_navy
 
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 23
 		y = 0
 
@@ -1875,7 +1914,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_four_ocean_navy_act }
 		relative_position_id = SOV_four_ocean_navy_act
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = -3
 		y = 1
 
@@ -1906,7 +1945,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_four_ocean_navy_act }
 		relative_position_id = SOV_four_ocean_navy_act
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = -1
 		y = 1
 
@@ -1937,7 +1976,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_four_ocean_navy_act }
 		relative_position_id = SOV_four_ocean_navy_act
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 1
 		y = 1
 
@@ -1968,7 +2007,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_four_ocean_navy_act }
 		relative_position_id = SOV_four_ocean_navy_act
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 3
 		y = 1
 
@@ -1999,7 +2038,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_osterkoping focus = SOV_Rostov focus = SOV_petersborg focus = SOV_osteros }
 		relative_position_id = SOV_four_ocean_navy_act
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 0
 		y = 2
 
@@ -2030,7 +2069,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_develop_the_navy }
 		relative_position_id = SOV_develop_the_navy
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = -1
 		y = 1
 
@@ -2061,7 +2100,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_coastal_defence_fleet }
 		relative_position_id = SOV_coastal_defence_fleet
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 0
 		y = 1
 
@@ -2092,7 +2131,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_develop_the_navy }
 		relative_position_id = SOV_develop_the_navy
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 1
 		y = 1
 
@@ -2123,9 +2162,387 @@ focus_tree = {
 		prerequisite = { focus = SOV_russian_marine_corps }
 		relative_position_id = SOV_russian_marine_corps
 
-		search_filters = { FOCUS_FILTER_NAVY }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
 		x = 0
 		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	### ARMY
+
+	focus = {
+		id = SOV_reform_the_red_army
+		icon = GFX_SOV_red_army
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_expand_the_radio_corps
+		icon = GFX_SOV_improve_signals
+
+		prerequisite = { focus = SOV_reform_the_red_army }
+		relative_position_id = SOV_reform_the_red_army
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_radar_development
+		icon = GFX_SOV_radar_development
+
+		prerequisite = { focus = SOV_expand_the_radio_corps }
+		relative_position_id = SOV_expand_the_radio_corps
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_logistics_development
+		icon = GFX_SOV_improve_logistics
+
+		prerequisite = { focus = SOV_radar_development }
+		relative_position_id = SOV_radar_development
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_found_armored_research_division
+		icon = GFX_SOV_armour_development
+
+		prerequisite = { focus = SOV_reform_the_red_army }
+		relative_position_id = SOV_reform_the_red_army
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_mass_mechanisation
+		icon = GFX_SOV_mass_mechanization
+
+		prerequisite = { focus = SOV_found_armored_research_division }
+		relative_position_id = SOV_found_armored_research_division
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_heavy_tank
+		icon = GFX_SOV_deploy_kv_1
+
+		prerequisite = { focus = SOV_mass_mechanisation }
+		relative_position_id = SOV_mass_mechanisation
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_medium_tank
+		icon = GFX_SOV_deploy_t_34
+
+		prerequisite = { focus = SOV_mass_mechanisation }
+		relative_position_id = SOV_mass_mechanisation
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_found_artillery_research_division
+		icon = GFX_SOV_artillery_development
+
+		prerequisite = { focus = SOV_reform_the_red_army }
+		relative_position_id = SOV_reform_the_red_army
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_a_peoples_rifle
+		icon = GFX_SOV_ppsh_hand_angry
+		mutually_exclusive = { focus = SOV_a_rifle_for_the_people }
+
+		prerequisite = { focus = SOV_found_artillery_research_division }
+		relative_position_id = SOV_found_artillery_research_division
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_a_rifle_for_the_people
+		icon = GFX_SOV_infantry_development
+		mutually_exclusive = { focus = SOV_a_peoples_rifle }
+
+		prerequisite = { focus = SOV_found_artillery_research_division }
+		relative_position_id = SOV_found_artillery_research_division
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_motorized_rocket_artillery
+		icon = GFX_SOV_katyusha
+
+		prerequisite = { focus = SOV_a_peoples_rifle focus = SOV_a_rifle_for_the_people }
+		relative_position_id = SOV_found_artillery_research_division
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		x = 0
+		y = 2
 
 		cost = 5
 
