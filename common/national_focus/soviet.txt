@@ -40,11 +40,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_five_year_plan_start
+				add_idea = SOV_legacy_of_five_year_plan
+			}
 		}
 	}
 	focus = {
 		id = SOV_start_the_siberian_plan
-		icon = GFX_SOV_goal_renovation_of_siberia
+		icon = GFX_SOV_one_way_trip_to_hell
 		prerequisite = { focus = SOV_legacy_of_five_year_plan }
 		relative_position_id = SOV_legacy_of_five_year_plan
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -69,6 +73,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+			else = {
+				add_political_power = 100
+			}
 		}
 	}
 	focus = {
@@ -323,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_focus_on_siberia
-		icon = GFX_SOV_stalin_industrial_development
+		icon = GFX_SOV_goal_renovation_of_siberia
 
 		prerequisite = { focus = SOV_start_the_siberian_plan }
 		relative_position_id = SOV_legacy_of_five_year_plan
@@ -417,7 +435,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_industy_in_omstad
-		icon = GFX_GER_underground_factories
+		icon = GFX_focus_SWE_landsverk
 
 		prerequisite = { focus = SOV_focus_on_siberia }
 		relative_position_id = SOV_focus_on_siberia
@@ -560,7 +578,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				date < 1940.1.1
+				date > 1940.1.1
 				FRA = {
 					has_war = yes
 				}
@@ -702,6 +720,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	#WAR INDUSTRY
 	focus = {
 		id = SOV_total_war_industry
 		icon = GFX_RAJ_home_defence_industry
@@ -712,6 +732,106 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
 		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			has_war = yes		
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_invest_in_heavy_industry_2
+		icon = GFX_SOV_steal_engineers_from_civilian_projects
+
+		prerequisite = { focus = SOV_total_war_industry }
+		prerequisite = { focus = SOV_invest_in_heavy_industry }
+		relative_position_id = SOV_invest_in_heavy_industry
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_baku_industrial_project
+		icon = GFX_GER_synthetic_oil_refinery
+
+		prerequisite = { focus = SOV_total_war_industry }
+		prerequisite = { focus = SOV_support_persian_industrial_loans }
+		relative_position_id = SOV_support_persian_industrial_loans
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_transformation_of_nature
+		icon = GFX_SOV_transformation_of_nature
+
+		prerequisite = { focus = SOV_total_war_industry }
+		prerequisite = { focus = SOV_brightest_minds }
+		relative_position_id = SOV_brightest_minds
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 0
+		y = 2
 
 		cost = 5
 
@@ -738,10 +858,10 @@ focus_tree = {
 
 	focus = {
 		id = SOV_spangberg_thought
-		icon = GFX_generic_soviet_background
+		icon = GFX_goal_support_communism
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		x = 10
+		x = 8
 		y = 0
 
 		cost = 5
@@ -766,7 +886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_collectivist_effort
-		icon = GFX_generic_soviet_background
+		icon = GFX_hungarian_continue_work_plan
 
 		prerequisite = { focus = SOV_spangberg_thought }
 		relative_position_id = SOV_spangberg_thought
@@ -797,7 +917,7 @@ focus_tree = {
 	}
 	focus = {
 		id = form_the_secret_police
-		icon = GFX_generic_soviet_background
+		icon = GFX_SOV_goal_NKVD
 
 		prerequisite = { focus = SOV_spangberg_thought }
 		relative_position_id = SOV_spangberg_thought
@@ -828,7 +948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_collectivse_the_construction_guilds
-		icon = GFX_generic_soviet_background
+		icon = GFX_goal_ITA_foreign_construction
 
 		prerequisite = { focus = SOV_collectivist_effort focus = form_the_secret_police }
 		relative_position_id = SOV_spangberg_thought
@@ -859,7 +979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_alliance_with_the_railway_barons
-		icon = GFX_generic_soviet_background
+		icon = GFX_SOV_nkvd_deportation
 
 		prerequisite = { focus = SOV_collectivse_the_construction_guilds }
 		relative_position_id = SOV_collectivse_the_construction_guilds
@@ -890,7 +1010,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_found_enviormental_agency
-		icon = GFX_generic_soviet_background
+		icon = GFX_focus_SMB_a_land_of_mountains
 
 		prerequisite = { focus = SOV_collectivist_effort }
 		relative_position_id = SOV_spangberg_thought
@@ -921,7 +1041,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_protect_the_motherland
-		icon = GFX_generic_soviet_background
+		icon = GFX_focus_GRE_a_land_of_mountains
 
 		prerequisite = { focus = SOV_found_enviormental_agency }
 		relative_position_id = SOV_found_enviormental_agency
@@ -952,7 +1072,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_reform_the_academy
-		icon = GFX_generic_soviet_background
+		icon = GFX_SOV_reform_the_education_system
 
 		prerequisite = { focus = form_the_secret_police }
 		relative_position_id = SOV_spangberg_thought
@@ -991,6 +1111,131 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 0
 		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_expand_the_secret_police
+		icon = GFX_SOV_NKVD_focus
+
+		prerequisite = { focus = form_the_secret_police }
+		relative_position_id = SOV_spangberg_thought
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 4
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_siberian_work_camps
+		icon = GFX_5_year_plan_phase_1_MIC
+
+		prerequisite = { focus = SOV_expand_the_secret_police }
+		relative_position_id = SOV_expand_the_secret_police
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_uralic_work_camps
+		icon = GFX_5_year_plan_phase_2_MIC
+
+		prerequisite = { focus = SOV_expand_the_secret_police }
+		relative_position_id = SOV_expand_the_secret_police
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_central_asian_work_camps
+		icon = GFX_5_year_plan_phase_3_MIC
+
+		prerequisite = { focus = SOV_siberian_work_camps }
+		prerequisite = { focus = SOV_uralic_work_camps }
+		relative_position_id = SOV_expand_the_secret_police
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 0
+		y = 2
 
 		cost = 5
 
@@ -1109,7 +1354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_modern_industry
-		icon = GFX_generic_soviet_background
+		icon = GFX_focus_generic_industry_3
 		mutually_exclusive = { focus = SOV_military_industrial_complex }
 
 		prerequisite = { focus = SOV_cult_of_progress }
@@ -1142,12 +1387,743 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_power_of_airforce
-		icon = GFX_generic_soviet_background
+		icon = GFX_SOV_new_plane_model
 
 		prerequisite = { focus = SOV_modern_industry }
 		relative_position_id = SOV_modern_industry
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_hammering_to_victory
+		icon = GFX_focus_generic_modernize_industry
+
+		prerequisite = { focus = SOV_power_of_airforce }
+		relative_position_id = SOV_modern_industry
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	### Air Tree
+
+	focus = {
+		id = SOV_ministry_of_aircraft_production
+		icon = GFX_SOV_red_army_airforce
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 17
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_founding_the_divebombing_school
+		icon = GFX_SOV_air_to_ground_exercises
+
+		relative_position_id = SOV_ministry_of_aircraft_production
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -2
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_rebuild_the_fighter_school
+		icon = GFX_focus_NORDIC_com_airforce
+
+		relative_position_id = SOV_ministry_of_aircraft_production
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 2
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_integrated_air_corps
+		icon = GFX_ROM_air_superiority
+		mutually_exclusive = { focus = SOV_new_branch_of_the_military }
+
+		prerequisite = { focus = SOV_founding_the_divebombing_school }
+		prerequisite = { focus = SOV_ministry_of_aircraft_production }
+		relative_position_id = SOV_ministry_of_aircraft_production
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_new_branch_of_the_military
+		icon = GFX_goal_CAN_airforce_separation
+		mutually_exclusive = { focus = SOV_integrated_air_corps }
+
+		prerequisite = { focus = SOV_rebuild_the_fighter_school }
+		prerequisite = { focus = SOV_ministry_of_aircraft_production }
+		relative_position_id = SOV_ministry_of_aircraft_production
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_fighter_focus
+		icon = GFX_SOV_fighter_designer
+
+		prerequisite = { focus = SOV_new_branch_of_the_military }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_supremacy_of_production
+		icon = GFX_goal_italy_increase_aircraft_production
+
+		prerequisite = { focus = SOV_new_branch_of_the_military focus = SOV_integrated_air_corps }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_tactical_bombers
+		icon = GFX_SOV_tupolev_design_bureau
+
+		prerequisite = { focus = SOV_new_branch_of_the_military focus = SOV_integrated_air_corps }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_close_air_support
+		icon = GFX_SOV_cas_designer
+
+		prerequisite = { focus = SOV_tactical_bombers }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_expanding_divebombing_school
+		icon = GFX_SOV_new_plane_model
+		mutually_exclusive = { focus = SOV_expanding_dogfight_school }
+
+		prerequisite = { focus = SOV_tactical_bombers }
+		prerequisite = { focus = SOV_supremacy_of_production }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -2
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_expanding_dogfight_school
+		icon = GFX_SOV_long_range_escorts
+		mutually_exclusive = { focus = SOV_expanding_divebombing_school }
+
+		prerequisite = { focus = SOV_fighter_focus }
+		prerequisite = { focus = SOV_supremacy_of_production }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_iron_will
+		icon = GFX_focus_generic_modernize_industry
+
+		prerequisite = { focus = SOV_expanding_divebombing_school focus = SOV_expanding_dogfight_school }
+		relative_position_id = SOV_new_branch_of_the_military
+
+		search_filters = { FOCUS_FILTER_AIR }
+		x = -1
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	### NAVY
+
+	focus = {
+		id = SOV_four_ocean_navy_act
+		icon = GFX_goal_coastal_navy
+
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 23
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_osterkoping
+		icon = GFX_focus_SOV_reinforce_northern_naval_bases
+
+		prerequisite = { focus = SOV_four_ocean_navy_act }
+		relative_position_id = SOV_four_ocean_navy_act
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = -3
+		y = 1
+
+		cost = 2.86
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_rostov
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+
+		prerequisite = { focus = SOV_four_ocean_navy_act }
+		relative_position_id = SOV_four_ocean_navy_act
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = -1
+		y = 1
+
+		cost = 2.86
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_petersborg
+		icon = GFX_focus_SOV_reinforce_western_naval_bases
+
+		prerequisite = { focus = SOV_four_ocean_navy_act }
+		relative_position_id = SOV_four_ocean_navy_act
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 1
+		y = 1
+
+		cost = 2.86
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_osteros
+		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
+
+		prerequisite = { focus = SOV_four_ocean_navy_act }
+		relative_position_id = SOV_four_ocean_navy_act
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 3
+		y = 1
+
+		cost = 2.86
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_develop_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		prerequisite = { focus = SOV_osterkoping focus = SOV_Rostov focus = SOV_petersborg focus = SOV_osteros }
+		relative_position_id = SOV_four_ocean_navy_act
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_coastal_defence_fleet
+		icon = GFX_ROM_coastal_defense_navy
+
+		prerequisite = { focus = SOV_develop_the_navy }
+		relative_position_id = SOV_develop_the_navy
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_shallow_water_navy
+		icon = GFX_focus_generic_modernize_industry
+
+		prerequisite = { focus = SOV_coastal_defence_fleet }
+		relative_position_id = SOV_coastal_defence_fleet
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_russian_marine_corps
+		icon = GFX_focus_SMB_special_forces_option_1
+
+		prerequisite = { focus = SOV_develop_the_navy }
+		relative_position_id = SOV_develop_the_navy
+
+		search_filters = { FOCUS_FILTER_NAVY }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+			has_war = yes 	
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_naval_forts
+		icon = GFX_focus_generic_coastal_fort
+
+		prerequisite = { focus = SOV_russian_marine_corps }
+		relative_position_id = SOV_russian_marine_corps
+
+		search_filters = { FOCUS_FILTER_NAVY }
 		x = 0
 		y = 1
 

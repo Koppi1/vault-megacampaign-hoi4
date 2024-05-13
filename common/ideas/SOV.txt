@@ -1,0 +1,42 @@
+ideas = {
+	hidden_ideas = {
+	}
+	country = {
+		SOV_legacy_of_five_year_plan_start = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				economy_cost_factor = 3
+				industrial_capacity_factory = -0.10
+				consumer_goods_expected_value = 0.25
+			}
+		}
+		SOV_legacy_of_five_year_plan = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				economy_cost_factor = 3
+				industrial_capacity_factory = -0.10
+				consumer_goods_expected_value = 0.20
+			}
+		}
+	}
+}
