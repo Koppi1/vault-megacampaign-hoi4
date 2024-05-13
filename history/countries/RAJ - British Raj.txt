@@ -241,16 +241,6 @@ set_convoys = 120
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
-443 = {
-	add_dynamic_modifier = { modifier = princely_state_modifier }
-}
-428 = {
-	add_dynamic_modifier = { modifier = princely_state_modifier }
-}
-425 = {
-	add_dynamic_modifier = { modifier = princely_state_mysore_modifier }
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.11.14"
