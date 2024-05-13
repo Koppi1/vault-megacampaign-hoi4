@@ -4,7 +4,7 @@ state={
 	name="STATE_572"
 
 	history={
-		owner = W57
+		owner = USA
 		victory_points = {
 			12735 1 
 		}
@@ -21,7 +21,7 @@ state={
 		add_core_of = USA
 		add_claim_by = CSA
 		add_claim_by = W20
-		add_claim_by = W57
+		add_claim_by = USA
 	}
 
 	provinces={

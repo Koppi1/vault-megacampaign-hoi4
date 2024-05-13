@@ -3,12 +3,12 @@ set_major = yes
 set_research_slots = 5
 add_named_threat = { threat = 2.5235 name = infamy }
 
-oob = "W57_OOB"
+oob = "USA_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "W57_1936_naval_mtg"
+		set_naval_oob = "USA_1936_naval_mtg"
 	else = { 
-		set_naval_oob = "W57_1936_naval_legacy"
+		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
 
@@ -253,7 +253,7 @@ set_popularities = {
 if = {
     limit = {has_dlc = "Together for Victory" }
 
-    add_to_tech_sharing_group = W57_research
+    add_to_tech_sharing_group = USA_research
 }
 
 add_ideas = {
@@ -266,12 +266,12 @@ add_ideas = {
 set_stability = 0.60
 set_war_support = 0.46
 
-recruit_character = W57_john_cena
-recruit_character = W57_essioff_leblanc
-recruit_character = W57_huguel_masson
-recruit_character = W57_letellier_pantaleon
-recruit_character = W57_huguel_perodeau
-recruit_character = W57_theodore_langelier
+recruit_character = USA_john_cena
+recruit_character = USA_essioff_leblanc
+recruit_character = USA_huguel_masson
+recruit_character = USA_letellier_pantaleon
+recruit_character = USA_huguel_perodeau
+recruit_character = USA_theodore_langelier
 
 if = {
 	limit = {
@@ -284,7 +284,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { W57 }
+		nationalities = { USA }
 	}
 
 	create_operative_leader = {
@@ -294,7 +294,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { W57 }
+		nationalities = { USA }
 	}
 
 	create_operative_leader = {
@@ -304,7 +304,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { W57 }
+		nationalities = { USA }
 	}
 
 	create_operative_leader = {
@@ -313,7 +313,7 @@ if = {
 		traits = {}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { W57 }
+		nationalities = { USA }
 	}
 
 	create_operative_leader = {
@@ -322,7 +322,7 @@ if = {
 		traits = {}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { W57 }
+		nationalities = { USA }
 	}
 
 }
@@ -390,7 +390,7 @@ if = {
 	create_equipment_variant = {
 		name = "1936 Submarine"
 		type = ship_hull_submarine_2
-		name_group = W57_SS_HISTORICAL
+		name_group = USA_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_engine_slot = sub_ship_engine_2
@@ -401,7 +401,7 @@ if = {
 	create_equipment_variant = {
 		name = "Early Battleship"
 		type = ship_hull_heavy_1
-		name_group = W57_BB_HISTORICAL
+		name_group = USA_BB_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -516,7 +516,7 @@ if = {
 		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
 	}
 }
-add_equipment_to_stockpile = { type = artillery_equipment amount = 2772 producer = W57 }
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1216 producer = W57 }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 103 producer = W57 }
+add_equipment_to_stockpile = { type = artillery_equipment amount = 2772 producer = USA }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1216 producer = USA }
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 103 producer = USA }
 

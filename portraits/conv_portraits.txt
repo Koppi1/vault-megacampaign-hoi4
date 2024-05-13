@@ -21018,7 +21018,7 @@ W55 = {
 	}
 }
 
-W57 = {
+USA = {
 	army = {
 		male = {
 			"GFX_Portrait_Europe_Generic_land_1"

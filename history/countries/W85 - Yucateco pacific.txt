@@ -69,7 +69,7 @@ set_popularities = {
 if = {
     limit = {has_dlc = "Together for Victory" }
 
-    add_to_tech_sharing_group = W57_research
+    add_to_tech_sharing_group = USA_research
 }
 
 

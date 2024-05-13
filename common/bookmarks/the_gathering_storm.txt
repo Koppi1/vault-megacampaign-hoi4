@@ -7,7 +7,7 @@
 		default_country = "SOV"
 		default = yes
 		
-		"W57"={
+		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
