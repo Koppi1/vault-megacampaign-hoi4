@@ -40,21 +40,7 @@ focus_tree = {
 		y = 1
 		cost = 5
         completion_reward = { 
-            add_advisor_role = {
-                 character = SCA_Per_Albin
-                 activate = yes
-                 advisor = {
-                    slot = theorist_production
-                    cost = 0
-                    idea_token =
-					SCA_Per_Albin
-					trains = {
-						SCA_Briliant_Theorist
-					} 
-
-                 }
-            }
-            activate_advisor = SCA_Per_Albin
+            add_ideas = SCA_per_albin
 
         }
     }

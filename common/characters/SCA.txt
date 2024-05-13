@@ -12,21 +12,25 @@ characters={
 			id=-1
 		}
 	}
-	SCA_Per_Albin={
-		name=SCA_Per_Albin
+	SCA_per_albin={
+		name=SCA_per_albin
 		portraits={
 			civilian={
 				large="gfx/leaders/NOR/portrait_NOR_johan_nygaardsvold.dds"
 			}
 		}
-		advisor={
-            cost = 100
-            slot = theorist_production
-            idea_token = SCA_Per_Albin
-                allowed = {
-                    original_tag = SCA
-                }
-                traits = { SCA_Briliant_Theorist }
-        }
+		advisor = {
+			cost = 150
+			picture = advisor_generic_23
+			idea_token = SCA_per_albin
+			slot = theorist_production
+			ledger = civilian
+			allowed = {
+				original_tag = SCA
+			}
+
+			traits = { SCA_Briliant_Theorist }
+
+		}
 	}
 }

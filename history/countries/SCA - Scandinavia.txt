@@ -202,7 +202,7 @@ set_stability = 0.60
 set_war_support = 0.61
 
 recruit_character = SCA_gunnar_thurs
-recruit_character = SCA_Per_Albin
+recruit_character = SCA_per_albin
 
 if = {
 	limit = {
