@@ -19,7 +19,7 @@ characters={
 				large="gfx/leaders/NOR/portrait_NOR_johan_nygaardsvold.dds"
 			}
 		}
-		cadvisor={
+		advisor={
             cost = 100
             slot = theorist_production
             idea_token = SCA_Per_Albin
