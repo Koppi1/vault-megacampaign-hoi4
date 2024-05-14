@@ -73,6 +73,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_siberian_plan
 			if = {
 				limit = {
 					OR = {
@@ -86,6 +87,48 @@ focus_tree = {
 			}
 			else = {
 				add_political_power = 100
+			}
+			674 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			433 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			677 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			440 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			676 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			434 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -119,6 +162,52 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan
+				add_idea = SOV_siberian_plan_2
+			}
+			429 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			426 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			660 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			656 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			421 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			430 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -150,6 +239,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			426 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -181,6 +283,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			660 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -212,6 +327,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			656 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -243,10 +371,23 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			421 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = SOV_saratov_steel
+		id = SOV_sarahov_steel
 		icon = GFX_chinese_steel
 
 		prerequisite = { focus = SOV_industy_in_bor }
@@ -275,6 +416,27 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan_2
+				add_idea = SOV_siberian_plan_3
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -306,6 +468,27 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			423 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -337,6 +520,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			428 = {
+				add_resource = {
+					type = chromium
+					amount = 20
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
 		}
 	}
 	focus = {
@@ -369,6 +562,52 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan
+				add_idea = SOV_siberian_plan_2
+			}
+			433 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			674 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			440 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			676 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			434 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			437 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -400,11 +639,24 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			440 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = SOV_industy_in_tjeljaby
-		icon = GFX_goal_r56_CAN_industry
+		icon = GFX_focus_generic_modernize_industry
 
 		prerequisite = { focus = SOV_industy_in_karaborg }
 		relative_position_id = SOV_focus_on_siberia
@@ -431,6 +683,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			674 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -462,6 +727,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			676 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -532,6 +810,27 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan_2
+				add_idea = SOV_siberian_plan_3
+			}
+			677 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -539,7 +838,7 @@ focus_tree = {
 		icon = GFX_SOV_capitals_of_socialism
 
 		prerequisite = { focus = SOV_perm_mining }
-		prerequisite = { focus = SOV_saratov_steel focus = SOV_blaberg_steel }
+		prerequisite = { focus = SOV_sarahov_steel focus = SOV_blaberg_steel }
 		relative_position_id = SOV_industy_in_peterborg
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -564,6 +863,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_five_year_plan
+				add_idea = SOV_legacy_of_five_year_plan_2
+			}
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan_3
+				add_idea = SOV_siberian_plan_4
+			}
 		}
 	}
 	focus = {
@@ -601,6 +908,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_five_year_plan_2
+				add_idea = SOV_legacy_of_five_year_plan_3
+			}
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan_4
+				add_idea = SOV_siberian_plan_5
+			}
 		}
 	}
 	focus = {
@@ -632,6 +947,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_siberian_plan_5
+				add_idea = SOV_siberian_plan_6
+			}
 		}
 	}
 	focus = {
@@ -663,6 +982,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_bright_minds
 		}
 	}
 	focus = {
@@ -694,6 +1014,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			391 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -725,6 +1053,23 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_heavy_industry_investment
+			428 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			673 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -759,6 +1104,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_five_year_plan_3
+				add_idea = SOV_total_war_industry
+			}
 		}
 	}
 
@@ -792,6 +1141,42 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_heavy_industry_investment
+				add_idea = SOV_heavy_industry_investment_2
+			}
+			441 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			686 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			677 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			675 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -825,6 +1210,22 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			385 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 40
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
 		}
 	}
 
@@ -858,10 +1259,32 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_bright_minds
+				add_idea = SOV_brightest_minds
+			}
+			443 = {
+				add_resource = {
+					type = chromium
+					amount = 40
+				}
+			}
+			445 = {
+				add_resource = {
+					type = tungsten
+					amount = 40
+				}
+			}
+			684 = {
+				add_resource = {
+					type = rubber
+					amount = 24
+				}
+			}
 		}
 	}
 	focus = {
-		id = SOV_production_management
+		id = SOV_production_mastery
 		icon = GFX_SOV_production_targets
 
 		prerequisite = { focus = SOV_total_war_industry }
@@ -890,6 +1313,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_total_war_industry
+				add_idea = SOV_total_war_industry_2
+			}
 		}
 	}
 
@@ -921,6 +1348,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -952,6 +1380,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -983,6 +1412,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1014,6 +1444,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_construction_guilds
 		}
 	}
 	focus = {
@@ -1045,6 +1476,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_construction_guilds
+				add_idea = SOV_railway_alliance
+			}
 		}
 	}
 	focus = {
@@ -1076,6 +1511,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_epa
 		}
 	}
 	focus = {
@@ -1107,6 +1543,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_epa
+				add_idea = SOV_epa_motherland
+			}
 		}
 	}
 	focus = {
@@ -1138,6 +1578,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_ruined_academia
+				add_idea = SOV_rebuilding_academia
+			}
 		}
 	}
 	focus = {
@@ -1169,6 +1613,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1200,6 +1645,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1231,6 +1677,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			438 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			679 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			680 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			682 = {
+				add_extra_state_shared_building_slots = 10
+			}
 		}
 	}
 	focus = {
@@ -1262,6 +1720,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			669 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			673 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			671 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			668 = {
+				add_extra_state_shared_building_slots = 10
+			}
 		}
 	}
 	focus = {
@@ -1294,6 +1764,21 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			687 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			684 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			689 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			688 = {
+				add_extra_state_shared_building_slots = 10
+			}
+			443 = {
+				add_extra_state_shared_building_slots = 10
+			}
 		}
 	}
 	focus = {
@@ -1327,6 +1812,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_military_industry
 		}
 	}
 	focus = {
@@ -1358,6 +1844,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_military_industry
+				add_idea = SOV_pansarberg
+			}
 		}
 	}
 	focus = {
@@ -1389,6 +1879,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_pansarberg
+				add_idea = SOV_russian_steel
+			}
 		}
 	}
 	focus = {
@@ -1422,6 +1916,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				technology = assembly_line_production
+				technology = modern_tools
+				technology = flexible_line
+				technology = streamlined_line
+			}
 		}
 	}
 	focus = {
@@ -1453,11 +1956,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_power_of_airforce
 		}
 	}
 	focus = {
 		id = SOV_hammering_to_victory
-		icon = GFX_focus_generic_modernize_industry
+		icon = GFX_SLO_hit_hammer_hard_for_slovakia
 
 		prerequisite = { focus = SOV_power_of_airforce }
 		relative_position_id = SOV_modern_industry
@@ -1484,6 +1988,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = SOV_russian_hammers
 		}
 	}
 
@@ -2203,7 +2708,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {		
+			date > 1939.1.1	
 		}
 		
 		bypass = {

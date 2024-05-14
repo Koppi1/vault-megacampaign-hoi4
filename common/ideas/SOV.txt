@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = 3
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = -0.80
 				consumer_goods_expected_value = 0.25
 			}
 		}
@@ -34,8 +34,441 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = 3
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = -0.80
 				consumer_goods_expected_value = 0.20
+			}
+		}
+		SOV_legacy_of_five_year_plan_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				industrial_capacity_factory = -0.80
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		SOV_legacy_of_five_year_plan_3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				industrial_capacity_factory = -0.65
+			}
+		}
+		SOV_total_war_industry = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		SOV_total_war_industry_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+		SOV_siberian_plan = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		SOV_siberian_plan_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		SOV_siberian_plan_3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		SOV_siberian_plan_4 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		SOV_siberian_plan_5 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				local_resources_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		SOV_siberian_plan_6 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				local_resources_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.3
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SOV_bright_minds = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		SOV_brightest_minds = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.10
+			}
+		}
+		SOV_heavy_industry_investment = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SOV_heavy_industry_investment_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		SOV_epa = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+		SOV_epa_motherland = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				political_power_gain = 0.3
+			}
+		}
+		SOV_construction_guilds = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SOV_railway_alliance = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		SOV_ruined_academia = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				research_speed_factor = -0.25
+			}
+		}
+		SOV_rebuilding_academia = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				research_speed_factor = -0.10
+			}
+		}
+		SOV_power_of_airforce = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+
+			research_bonus = {
+				air_equipment = 0.25
+			}	
+		}
+		SOV_russian_hammers = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		SOV_military_industry = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SOV_pansarberg = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		SOV_russian_steel = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 	}

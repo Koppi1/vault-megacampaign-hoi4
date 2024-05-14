@@ -398,6 +398,8 @@ add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
 	collectivised_economy
+	SOV_legacy_of_five_year_plan_start
+	SOV_ruined_academia
 }
 set_stability = 0.60
 set_war_support = 0.60
