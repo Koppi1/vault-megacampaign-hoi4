@@ -2230,5 +2230,177 @@ characters={
 			}
 		}
 	}
+	SOV_torsten_gardlund = {
+		advisor={
+			slot = theorist_production
+			idea_token = SOV_torsten_gardlund
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { captain_of_industry }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 120
+			}
+		}
+	}
+	SOV_erik_lindahl = {
+		advisor={
+			slot = theorist_production
+			idea_token = SOV_erik_lindahl
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { war_industrialist }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_gustav_cassel = {
+		advisor={
+			slot = theorist_production
+			idea_token = SOV_gustav_cassel
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { USA_armaments_organizer }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_sture_eskilsson = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_sture_eskilsson
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { SOV_commissar_of_internal_affairs }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_einar_ljungberg = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_einar_ljungberg
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { popular_figurehead }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_einar_ljungberg = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_einar_ljungberg
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { OAK_popular_figurehead }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_anders_carlberg = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_anders_carlberg
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { council_communist }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_albin_storm = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_albin_storm
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_total_war_industry
+			}
+			traits = { resistance_banker }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	SOV_sven_linderot = {
+		advisor={
+			slot = political_advisor
+			idea_token = SOV_sven_linderot
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			}
+			traits = { silent_workhorse }
+
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 200
+			}
+		}
+	}
 
 }

@@ -235,7 +235,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_industy_in_kasan
+		id = SOV_industy_in_samara
 		icon = GFX_goal_generic_light_industry
 
 		prerequisite = { focus = SOV_focus_on_core }
@@ -275,7 +275,7 @@ focus_tree = {
 		completion_reward = {
 			clr_country_flag = SOV_industrial_focus
 			set_country_flag = SOV_industrial_focus
-			426 = {
+			429 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
@@ -291,10 +291,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_industy_in_bor
+		id = SOV_industy_in_astrakhan
 		icon = GFX_goal_generic_light_industry
 
-		prerequisite = { focus = SOV_industy_in_kasan }
+		prerequisite = { focus = SOV_industy_in_samara }
 		relative_position_id = SOV_focus_on_core
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -331,7 +331,7 @@ focus_tree = {
 		completion_reward = {
 			clr_country_flag = SOV_industrial_focus
 			set_country_flag = SOV_industrial_focus
-			660 = {
+			430 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
@@ -462,7 +462,7 @@ focus_tree = {
 		id = SOV_sarahov_steel
 		icon = GFX_chinese_steel
 
-		prerequisite = { focus = SOV_industy_in_bor }
+		prerequisite = { focus = SOV_industy_in_astrakhan }
 		prerequisite = { focus = SOV_industy_in_tver }
 		relative_position_id = SOV_focus_on_core
 
@@ -1574,6 +1574,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_great_purge
+				add_idea = SOV_secret_police
+			}
 			add_political_power = 100
 		}
 	}
@@ -1800,6 +1804,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_secret_police
+				add_idea = SOV_secret_police_2
+			}
 			add_political_power = 100
 		}
 	}
@@ -2181,7 +2189,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 0
-		y = 2
+		y = 1
 
 		cost = 5
 
@@ -2213,7 +2221,6 @@ focus_tree = {
 		icon = GFX_hungarian_continue_work_plan
 
 		prerequisite = { focus = SOV_germano_russian_treaty }
-		prerequisite = { focus = SOV_russian_industry_reborn }
 		relative_position_id = SOV_germano_russian_treaty
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3343,6 +3350,7 @@ focus_tree = {
 		}
 
 		available = {			
+			has_war = yes
 		}
 		
 		bypass = {
@@ -3354,6 +3362,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+		}
+		select_effect = {
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 

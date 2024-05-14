@@ -400,6 +400,7 @@ add_ideas = {
 	collectivised_economy
 	SOV_legacy_of_five_year_plan_start
 	SOV_ruined_academia
+	SOV_legacy_of_great_purge
 }
 set_stability = 0.60
 set_war_support = 0.60
@@ -414,6 +415,14 @@ recruit_character = SOV_gunnar_johanesson
 recruit_character = SOV_jon_arnorsson
 recruit_character = SOV_asgeir_hafstein
 recruit_character = SOV_august_spangberg
+recruit_character = SOV_torsten_gardlund
+recruit_character = SOV_erik_lindahl
+recruit_character = SOV_gustav_cassel
+recruit_character = SOV_sture_eskilsson
+recruit_character = SOV_einar_ljungberg
+recruit_character = SOV_anders_carlberg
+recruit_character = SOV_albin_storm
+recruit_character = SOV_sven_linderot
 
 if = {
 	limit = {

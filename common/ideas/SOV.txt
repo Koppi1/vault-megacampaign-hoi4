@@ -471,5 +471,54 @@ ideas = {
 				}
 			}
 		}
+		SOV_legacy_of_great_purge = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = generic_purge
+			
+			modifier = {
+				stability_factor = -0.25
+			}
+		}
+		SOV_secret_police = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = nkvd
+			
+			modifier = {
+				defensive_war_stability_factor = 0.15
+				stability_factor = -0.1
+			}
+		}
+		SOV_secret_police_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = nkvd_2
+			
+			modifier = {
+				defensive_war_stability_factor = 0.15
+			}
+		}
 	}
 }
