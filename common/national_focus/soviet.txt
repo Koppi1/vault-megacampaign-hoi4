@@ -40,6 +40,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_country_flag = SOV_industrial_focus
 			swap_ideas = {
 				remove_idea = SOV_legacy_of_five_year_plan_start
 				add_idea = SOV_legacy_of_five_year_plan
@@ -61,7 +62,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -73,6 +85,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			add_ideas = SOV_siberian_plan
 			if = {
 				limit = {
@@ -150,7 +164,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}			
 		}
 		
 		bypass = {
@@ -162,6 +187,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			swap_ideas = {
 				remove_idea = SOV_siberian_plan
 				add_idea = SOV_siberian_plan_2
@@ -227,7 +254,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {		
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}		
 		}
 		
 		bypass = {
@@ -239,6 +277,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			426 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -272,6 +312,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -283,6 +334,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			660 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -315,7 +368,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}		
 		}
 		
 		bypass = {
@@ -327,6 +391,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			656 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -359,7 +425,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -371,6 +448,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			421 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -404,7 +483,18 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {			
+		available = {
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -416,6 +506,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			swap_ideas = {
 				remove_idea = SOV_siberian_plan_2
 				add_idea = SOV_siberian_plan_3
@@ -457,6 +549,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -468,6 +571,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			422 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -509,6 +614,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -520,14 +636,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			428 = {
 				add_resource = {
 					type = chromium
-					amount = 20
+					amount = 60
 				}
 				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 60
 				}
 			}
 		}
@@ -551,6 +669,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -562,6 +691,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			swap_ideas = {
 				remove_idea = SOV_siberian_plan
 				add_idea = SOV_siberian_plan_2
@@ -628,6 +759,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -639,6 +781,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			440 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -672,6 +816,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -683,6 +838,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			674 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -716,6 +873,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -727,6 +895,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			676 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -760,6 +930,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -771,6 +952,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			433 = {
 				add_building_construction = {
 					type = synthetic_rubber_refinery
@@ -799,6 +982,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}	
 		}
 		
 		bypass = {
@@ -810,6 +1004,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			clr_country_flag = SOV_industrial_focus
+			set_country_flag = SOV_industrial_focus
 			swap_ideas = {
 				remove_idea = SOV_siberian_plan_2
 				add_idea = SOV_siberian_plan_3
@@ -852,6 +1048,17 @@ focus_tree = {
 		}
 
 		available = {			
+			has_country_flag = {
+				flag = SOV_industrial_focus
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = SOV_industrial_focus_days_tt
+				has_country_flag = {
+					flag = SOV_industrial_focus
+					days > 40
+				}
+			}
 		}
 		
 		bypass = {
