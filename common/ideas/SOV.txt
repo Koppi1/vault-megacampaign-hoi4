@@ -12,7 +12,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = tur_etatism_bonus
 			
 			modifier = {
 				economy_cost_factor = 3
@@ -30,7 +30,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = tur_etatism_bonus
 			
 			modifier = {
 				economy_cost_factor = 3
@@ -48,7 +48,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = tur_etatism
 			
 			modifier = {
 				industrial_capacity_factory = -0.80
@@ -65,7 +65,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = tur_etatism
 			
 			modifier = {
 				industrial_capacity_factory = -0.65
@@ -81,7 +81,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = NORDIC_industry_communist
 			
 			modifier = {
 				industrial_capacity_factory = 0.10
@@ -97,7 +97,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = NORDIC_industry_communist
 			
 			modifier = {
 				industrial_capacity_factory = 0.25
@@ -113,7 +113,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_third_five_year_plan_civilian
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.10
@@ -130,7 +130,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_third_five_year_plan_civilian
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
@@ -147,7 +147,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_third_five_year_plan_civilian
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
@@ -165,7 +165,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_third_five_year_plan_civilian
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
@@ -185,7 +185,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_third_five_year_plan_military
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
@@ -205,7 +205,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
@@ -226,7 +226,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = generic_research_bonus
 			
 			modifier = {
 				research_speed_factor = 0.15
@@ -242,7 +242,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = generic_research_bonus
 			
 			modifier = {
 				research_speed_factor = 0.15
@@ -259,7 +259,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = man_five_year_plan_industry
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
@@ -275,7 +275,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = man_five_year_plan_tank
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
@@ -291,7 +291,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = ARG_argentine_metropole
 			
 			modifier = {
 				political_power_gain = 0.15
@@ -307,7 +307,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = ARG_argentine_metropole
 			
 			modifier = {
 				political_power_gain = 0.3
@@ -323,7 +323,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_soviet_railways
 			
 			modifier = {
 				production_speed_buildings_factor = 0.1
@@ -339,7 +339,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_soviet_railways
 			
 			modifier = {
 				production_speed_buildings_factor = 0.15
@@ -356,7 +356,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = SOV_scientist_defect
 			
 			modifier = {
 				research_speed_factor = -0.25
@@ -372,7 +372,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = jap_duplicate_research
 			
 			modifier = {
 				research_speed_factor = -0.10
@@ -388,7 +388,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = NORDIC_airforce_communist
 
 			research_bonus = {
 				air_equipment = 0.25
@@ -404,7 +404,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = ARG_construction_guilds
 			
 			modifier = {
 				industrial_capacity_factory = 0.15
@@ -420,7 +420,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = man_five_year_plan_industry
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
@@ -436,7 +436,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = man_five_year_plan_tank
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
@@ -458,7 +458,7 @@ ideas = {
 				has_government = communism
 			}
 			
-			picture = HUN_treaty_of_triannon
+			picture = ARG_economic_reactivation
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
