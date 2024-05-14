@@ -203,6 +203,8 @@ set_war_support = 0.61
 
 recruit_character = SCA_gunnar_thurs
 recruit_character = SCA_per_albin
+add_ideas = Unhappy_Farmers
+add_ideas = Uncertern_succsesion
 
 if = {
 	limit = {

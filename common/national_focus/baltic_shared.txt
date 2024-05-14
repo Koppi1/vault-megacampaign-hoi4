@@ -1,6 +1,6 @@
 focus_tree = {
 	id = scandinavia_focus
-	
+	continuous_focus_position = { x = 2050 y = 1000 }
 	country = {
 		factor = 0
 		
@@ -20,8 +20,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = { 
-            add_political_power	= 200
-            political_power_factor	= 0.1
+            add_political_power	= 300
+			add_ideas = En_Svensk_tiger
 		}
 
 		ai_will_do = {
@@ -36,12 +36,372 @@ focus_tree = {
         prerequisite = { focus = Tackle_the_crisis }
 		id = Pers_Industry_reform
 		icon = GFX_GER_panzerfausts_for_all
-		x = 0
+		x = 5
 		y = 1
 		cost = 5
         completion_reward = { 
-            add_ideas = SCA_per_albin
+            add_advisor_role = {
+                 character = SCA_per_albin
+                 activate = yes
+                 advisor = {
+                    slot = theorist_production
+                    cost = 0
+                    idea_token =
+					SCA_Per_Albin
+					trains = {
+						SCA_Briliant_Theorist
+					} 
+
+                 }
+            }
+            activate_advisor = SCA_per_albin
 
         }
     }
-}	
+	focus = {
+        prerequisite = { focus = Pers_Industry_reform }
+		id = subsidize_farmers
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 2
+		cost = 5
+        completion_reward = { 
+            remove_ideas = Unhappy_Farmers
+        }
+    }
+	focus = {
+        prerequisite = { focus = subsidize_farmers }
+		id = New_constitution
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 3
+		cost = 5
+        completion_reward = { 
+            remove_ideas = Uncertern_succsesion
+        }
+    }
+	focus = {
+        prerequisite = { focus = New_constitution }
+		id = Open_new_factories
+		icon = GFX_GER_panzerfausts_for_all
+		x = 4
+		y = 4
+		cost = 5
+        completion_reward = { 
+            462 = {
+				add_extra_state_shared_building_slots = 2
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 2
+           	 	 instant_build = yes
+				}
+			}
+        }
+	}
+		focus = {
+        prerequisite = { focus = New_constitution }
+		id = modernise_the_railways
+		icon = GFX_GER_panzerfausts_for_all
+		x = 6
+		y = 4
+		cost = 5
+        completion_reward = { 
+            462 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			466 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			464 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			461 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			460 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			459 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+		}
+    }
+
+	focus = {
+        prerequisite = { focus = Open_new_factories  }
+		prerequisite = { focus = modernise_the_railways  }
+		id = The_Sweden_project
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 5
+		cost = 5
+        completion_reward = { 
+            462 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			462 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			  460 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			460 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 2
+           	 	 instant_build = yes
+				}
+			}
+			464 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			464 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+        prerequisite = { focus = Open_new_factories  }
+		prerequisite = { focus = modernise_the_railways  }
+		id = The_norway_project
+		icon = GFX_GER_panzerfausts_for_all
+		x = 3
+		y = 5
+		cost = 5
+        completion_reward = { 
+            459 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			459 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			  457 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			457 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			458 = {
+				add_extra_state_shared_building_slots = 1
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+			458 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+        prerequisite = { focus = Open_new_factories  }
+		prerequisite = { focus = modernise_the_railways  }
+		id = The_Denmark_Project
+		icon = GFX_GER_panzerfausts_for_all
+		x = 7
+		y = 5
+		cost = 5
+        completion_reward = { 
+            466 = {
+				add_extra_state_shared_building_slots = 2
+		         add_building_construction = {
+            	 type = industrial_complex
+           	     level = 2
+           	 	 instant_build = yes
+				}
+			}
+			466 = {
+		         add_building_construction = {
+            	 type = infrastructure
+           	     level = 3
+           	 	 instant_build = yes
+				}
+			}
+		}
+	}	
+	focus = {
+        prerequisite = { focus = The_norway_project  }
+		prerequisite = { focus = The_Denmark_Project  }
+		prerequisite = { focus = The_Sweden_project  }
+		id = Invest_in_mining
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 6
+		cost = 5
+		completion_reward = { 
+			add_ideas = Mining_investments
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+
+		}
+	}
+	focus = {
+		prerequisite= {focus =  Invest_in_mining}
+		id = invest_in_arms_manifacturing
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 7
+		cost = 5
+	completion_reward = { 
+			remove_ideas = En_Svensk_tiger
+			add_ideas = En_Svensk_tiger_2
+            466 = {
+				add_extra_state_shared_building_slots = 3
+		         add_building_construction = {
+            	 type = arms_factory 
+           	     level = 3
+           	 	 instant_build = yes
+				}
+			}
+		}
+	}	
+	focus = {
+		prerequisite= {focus =  invest_in_arms_manifacturing}
+		id = New_production_lnies
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 8
+		cost = 5
+	completion_reward = { 
+			remove_ideas = En_Svensk_tiger_2
+			add_ideas = En_Svensk_tiger_3
+            459 = {
+				add_extra_state_shared_building_slots = 2
+		         add_building_construction = {
+            	 type = arms_factory 
+           	     level = 1
+           	 	 instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		prerequisite= {focus =  New_production_lnies}
+		id = New_technology
+		icon = GFX_GER_panzerfausts_for_all
+		x = 5
+		y = 9
+		cost = 5
+	completion_reward = { 
+			remove_ideas = En_Svensk_tiger_3
+			add_ideas = En_Svensk_tiger_4
+						add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+	}	
+	focus = {
+		prerequisite = [ focus = New_technology]
+		mutually_exclusive = { focus = efficent_factories }
+		icon = GFX_GER_panzerfausts_for_all
+		id = Bigger_factories
+		x = 3
+		y = 10
+		completion_reward = {
+			add_ideas = bigger_factories_1
+		}
+	}
+		focus = {
+		prerequisite = [ focus = New_technology]
+		mutually_exclusive = { focus = Bigger_factories  }
+		icon = GFX_GER_panzerfausts_for_all
+		id = efficent_factories
+		x = 7
+		y = 10
+		completion_reward = {
+			add_ideas = efficent_factories_1
+		}
+		}
+			focus = {
+			prerequistite = { focus = Bigger_factories focus=efficent_factories }		
+			icon = GFX_GER_panzerfausts_for_all
+		id = efficent_factories
+		x = 7
+		y = 10
+		completion_reward = {
+			remove_ideas = Mining_investments
+			add_ideas = Mining_investments_2
+			}
+		}
+		}
+}
