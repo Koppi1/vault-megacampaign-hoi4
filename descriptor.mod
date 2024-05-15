@@ -1,7 +1,6 @@
 version="1.10"
 replace_path="history/countries"
 replace_path="common/units/names_divisions"
-replace_path="history/states"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="common/national_focus"
