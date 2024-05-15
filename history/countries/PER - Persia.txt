@@ -1,5 +1,7 @@
-﻿capital = 391
+capital = 391
 set_research_slots = 4
+
+recruit_character = PER_Reza_Shah
 
 oob = "PER_OOB"
 if = {
@@ -366,7 +368,7 @@ if = {
 # Research Bonuses
 
 set_country_flag = conv_persia
-set_convoys = 0
+set_convoys = 1000
 
 set_politics = {
     ruling_party = communism
@@ -376,25 +378,20 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 74
+	communism = 100
 	democratic = 0
-	fascism = 26
+	fascism = 0
 	neutrality = 0
 }
 
-give_guarantee = FRA
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = FRA } }
-	diplomatic_relation = { country = FRA relation = non_aggression_pact }
-}
 add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
 	collectivised_economy
-	culture_persian
+	PER_recovery_from_the_five_year_plan_start
 }
 set_stability = 0.60
-set_war_support = 0.64
+set_war_support = 0.60
 
 recruit_character = PER_hasan_ansari
 recruit_character = PER_karim_kashani
@@ -581,4 +578,3 @@ if = {
 add_equipment_to_stockpile = { type = artillery_equipment amount = 1728 producer = PER }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1 producer = PER }
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1 producer = PER }
-

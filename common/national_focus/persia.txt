@@ -1,0 +1,485 @@
+focus_tree = {
+	id = per_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = PER
+		}
+	}
+	continuous_focus_position = { x = 2050 y = 1000 }
+
+	default = no
+
+	### Industry Tree
+
+	focus = {
+		id = PER_recover_from_the_five_year_plan
+		icon = GFX_5_year_plan_phase_1_IC
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 4
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PER_recovery_from_the_five_year_plan_start
+				add_idea = PER_recovery_from_the_five_year_plan
+		}
+	}
+		}
+	
+	focus = {
+		id = PER_develop_isfahan
+		icon = GFX_goal_generic_light_industry
+		
+		prerequisite = { focus = PER_recover_from_the_five_year_plan }
+		relative_position_id = PER_recover_from_the_five_year_plan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_develop_khorasan
+		icon = GFX_goal_generic_light_industry
+		
+		prerequisite = { focus = PER_recover_from_the_five_year_plan }
+		relative_position_id = PER_recover_from_the_five_year_plan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_develop_afghanistan
+		icon = GFX_goal_generic_light_industry
+		
+		prerequisite = { focus = PER_develop_khorasan }
+		relative_position_id = PER_develop_khorasan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_isfahan_academy_of_science
+		icon = GFX_goal_research_silver
+		
+		prerequisite = { focus = PER_develop_isfahan }
+		relative_position_id = PER_develop_isfahan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_develop_fars
+		icon = GFX_goal_generic_light_industry
+		
+		prerequisite = { focus = PER_develop_isfahan }
+		relative_position_id = PER_develop_isfahan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_develop_azerbaijan
+		icon = GFX_goal_generic_light_industry
+		
+		prerequisite = { focus = PER_develop_isfahan }
+		relative_position_id = PER_develop_isfahan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_kickstart_our_military_industry
+		icon = GFX_RAJ_home_defence_industry
+		
+		prerequisite = { focus = PER_develop_azerbaijan }
+		prerequisite = { focus = PER_develop_fars }
+		prerequisite = { focus = PER_develop_afghanistan }
+		relative_position_id = PER_develop_fars
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_persian_rubber_industry
+		icon = GFX_GER_synthetic_oil_refinery
+		
+		prerequisite = { focus = PER_develop_azerbaijan }
+		relative_position_id = PER_develop_azerbaijan
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -1
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_western_persian_military_industry
+		icon = GFX_RAJ_home_defence_industry
+		
+		prerequisite = { focus = PER_kickstart_our_military_industry }
+		relative_position_id = PER_kickstart_our_military_industry
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_central_persian_military_industry
+		icon = GFX_RAJ_home_defence_industry
+		
+		prerequisite = { focus = PER_kickstart_our_military_industry }
+		relative_position_id = PER_kickstart_our_military_industry
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_eastern_persian_military_industry
+		icon = GFX_RAJ_home_defence_industry
+		
+		prerequisite = { focus = PER_kickstart_our_military_industry }
+		relative_position_id = PER_kickstart_our_military_industry
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 2
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_apply_russian_production_methods
+		icon = GFX_SOV_production_speed
+		
+		prerequisite = { focus = PER_western_persian_military_industry }
+		prerequisite = { focus = PER_central_persian_military_industry }
+		relative_position_id = PER_western_persian_military_industry
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 1
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_increase_military_research_spending
+		icon = GFX_goal_research_silver
+		
+		prerequisite = { focus = PER_apply_russian_production_methods }
+		relative_position_id = PER_apply_russian_production_methods
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			}
+	}
+	
+	focus = {
+		id = PER_mobilize_the_persian_economy
+		icon = GFX_SOV_production_targets
+		
+		prerequisite = { focus = PER_eastern_persian_military_industry }
+		relative_position_id = PER_eastern_persian_military_industry
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {			
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = tot_economic_mobilisation
+			}
+	}

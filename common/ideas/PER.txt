@@ -1,0 +1,41 @@
+ideas = {
+	hidden_ideas = {
+	}
+	country = {
+		PER_recovery_from_the_five_year_plan_start = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = tur_etatism_bonus
+			
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				production_speed_arms_factory_factor = -0.80
+				
+			}
+			
+		}
+		PER_recovery_from_the_five_year_plan = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = tur_etatism_bonus
+			
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				production_speed_arms_factory_factor = -0.80
+				production_speed_industrial_complex_factor = 0.20
+			}
+		}

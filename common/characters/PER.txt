@@ -119,18 +119,17 @@ characters={
 		}
 	}
 
-	PER_reza_khan={
-		name=PER_reza_khan
+	PER_Reza_Shah={
+		name=PER_reza_shah
 		portraits={
-			civilian={
-				large="GFX_JOR_Salih_Jabr"
+			civilian = {
+				large = "Persia_Ahmad_Shah_Qajar"
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=marxism
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
 
 }
